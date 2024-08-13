@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+@font-face {
+  font-family: PixelOperator;
+  src: url("assets/fonts/PixelOperator8.ttf");
+  font-weight: 400;
+  font-weight: normal;
+}
+
+:root {
+  box-sizing: border-box;
+}
+#app {
+  height: 70vh;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: fit-content !important;
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.87);
+  background: rgb(0, 255, 156);
+  background: linear-gradient(
+    172deg,
+    rgb(1, 199, 123) 0%,
+    rgb(64, 224, 93) 100%
+  );
+  font-size: larger;
+}
+
+@media only screen and (max-width: 500px) {
+  /* header {
+    margin-bottom: -30px;
+  } */
+  /* #app {
+    width: 100%;
+  } */
+}
+
+h1,
+h3 {
+  font-family: PixelOperator;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#phaser-logo {
+  height: 3vh;
+}
+
+#stellar-logo {
+  height: 4vh;
+}
+
+#plus-logo {
+  font-size: 3rem;
+  font-family: "Pixelify Sans";
+}

@@ -1,0 +1,125 @@
+{
+	"textures": [
+		{
+			"image": "coin-animation.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1510,
+				"h": 301
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Coin1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 302,
+						"h": 301
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 302,
+						"h": 301
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 302,
+						"h": 301
+					}
+				},
+				{
+					"filename": "TurningCoin1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 203,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 203,
+						"h": 300
+					},
+					"frame": {
+						"x": 302,
+						"y": 0,
+						"w": 203,
+						"h": 300
+					}
+				},
+				{
+					"filename": "TurningCoin2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 36,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 36,
+						"h": 300
+					},
+					"frame": {
+						"x": 604,
+						"y": 0,
+						"w": 36,
+						"h": 300
+					}
+				},
+				{
+					"filename": "TurningCoin3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 205,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 205,
+						"h": 300
+					},
+					"frame": {
+						"x": 906,
+						"y": 0,
+						"w": 205,
+						"h": 300
+					}
+				},
+				{
+					"filename": "TurningCoin4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 36,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 36,
+						"h": 300
+					},
+					"frame": {
+						"x": 1208,
+						"y": 0,
+						"w": 36,
+						"h": 300
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:78f834504ad103fa7903eff59f4bfce5:496d65594363aa587c263f2660a12312:17e10966b17c74127972dcc8071d754d$"
+	}
+}
