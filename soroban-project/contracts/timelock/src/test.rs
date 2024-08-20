@@ -42,7 +42,6 @@ impl<'a> TapMintTest<'a> {
         let token_admin = Address::generate(&env);
         let token_distributor: Address = Address::generate(&env);
         let player1 = Address::generate(&env);
-        let player2 = Address::generate(&env);
 
         let (token_id, token_client, token_admin_client) =
             create_token_contract(&env, &token_admin);

@@ -123,7 +123,7 @@ impl TapMintContract {
             .instance()
             .get(&DataKey::PlayerMintKey)
             .unwrap();
-        mint_key_map.remove(&player_pub_key);
+        mint_key_map.remove(player_pub_key.clone());
         env.storage()
             .instance()
             .set(&DataKey::PlayerMintKey, &mint_key_map);
@@ -142,7 +142,7 @@ impl TapMintContract {
 
         // Publish mint event
         env.events()
-            .publish((symbol_short!("Mint"), player_pub_key), MINT_AMOUNT);
+            .publish((symbol_short!("Mint"), player_pub_key.clone()), MINT_AMOUNT);
 
         // Extend contract instance TTL
         env.storage().instance().extend_ttl(2000, 10000);
@@ -232,7 +232,7 @@ fn is_mint_key_valid(env: &Env, player_pub_key: &String, key: i128) -> bool {
         .instance()
         .get(&DataKey::PlayerMintKey)
         .unwrap();
-    if let Some(mint_key) = mint_key_map.get(player_pub_key) {
+    if let Some(mint_key) = mint_key_map.get(player_pub_key.clone()) {
         mint_key.player == *player_pub_key && mint_key.key == key
     } else {
         false
@@ -275,7 +275,7 @@ fn is_cooldown_over(env: &Env, player_pub_key: &String) -> bool {
         .instance()
         .get(&DataKey::PlayerMintTime)
         .unwrap();
-    if let Some(last_mint_time) = mint_map.get(player_pub_key) {
+    if let Some(last_mint_time) = mint_map.get(player_pub_key.clone()) {
         let ledger_timestamp = env.ledger().timestamp();
         return ledger_timestamp >= (last_mint_time + (MINT_COOLDOWN_SECONDS as u64));
     }
